@@ -185,6 +185,7 @@ body {
 }
 
 .gallery-item {
+  width: 100%;
   aspect-ratio: 9 / 16;
   background: #0a0a0a;
   border: 1px solid #287233;
@@ -211,29 +212,34 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 
 
 /* =========================================================
-   NUR IMG_1530.jpeg
+   ERSTES BILD - IMG_1530.jpeg
    ========================================================= */
 
-/* Der Link bekommt die komplette Größe des Rahmens */
-.gallery-item:first-child a {
+.gallery > .gallery-item:first-child {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  overflow: hidden;
+}
+
+.gallery > .gallery-item:first-child a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* Das JPEG wird genauso in den 9:16-Rahmen eingepasst
-   wie deine Videos */
-.gallery-item:first-child img {
+.gallery > .gallery-item:first-child img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center;
-  display: block;
 }
 
 
@@ -262,7 +268,7 @@ body {
 
 
 /* =========================================================
-   RESPONSIVE
+   DESKTOP
    ========================================================= */
 
 @media (min-width: 700px) {
