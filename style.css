@@ -192,6 +192,15 @@ body {
   display: block;
 }
 
+
+.gallery-item--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 .ig-embed {
   width: 100%;
   height: 100%;
