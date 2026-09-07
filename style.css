@@ -9,7 +9,10 @@
 }
 
 body {
-  font-family: system-ui, Arial, sans-serif;
+  /* font-family: system-ui, Arial, sans-serif; */
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-style: italic;
   color: #c9e8d1;
   background: #000000;
   line-height: 1.5;
@@ -35,6 +38,12 @@ body {
 .logo {
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.logo img {
+  height: 1.1rem;
+  width: auto;
+  display: block;
 }
 
 .nav {
