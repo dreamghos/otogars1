@@ -17,12 +17,18 @@
     </nav>
   </header>
 
-  <!-- ===== HERO: Einstiegsbereich mit Titel + Anruf-Button (Hintergrundbild responsive via CSS) ===== -->
+  <!-- ===== HERO: Einstiegsbereich mit Titel + Anruf-Button (Hintergrundvideo, autoplay) ===== -->
   <section class="hero">
-    <h1>Aracınız Bizimle Işıldar</h1>
-    <p>Fatsa'da kaliteli Oto Yıkama ve Detay Merkezi</p>
-    <a href="tel:+905465360999" class="btn">Bizi Arayın</a>
-    <a href="https://g.page/r/CXoYSJRvODypEBM/review" class="btn">Yorum Yapın</a>
+    <video class="hero-video" autoplay muted loop playsinline poster="image2.jpeg">
+      <source src="image2.mp4" media="(min-width: 700px)">
+      <source src="image1.mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Aracınız Bizimle Işıldar</h1>
+      <p>Fatsa'da kaliteli Oto Yıkama ve Detay Merkezi</p>
+      <a href="tel:+905465360999" class="btn">Bizi Arayın</a>
+      <a href="https://g.page/r/CXoYSJRvODypEBM/review" class="btn">Yorum Yapın</a>
+    </div>
   </section>
 
   <!-- ===== HIZMETLER: Pakete links, Leistungen als Liste rechts ===== -->
